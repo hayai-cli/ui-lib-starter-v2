@@ -1,0 +1,35 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "playground/**/*",
+    "playround/**/*.vue"
+  ],
+  "exclude": [
+    "playground/**/__tests__/*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@ui/*": [
+        "./packages/*"
+      ],
+      "@shared/*": [
+        "./shared/*"
+      ],
+      "@style/*": [
+        "./style/*"
+      ],
+      "@com/*": [
+        "./playground/components/*"
+      ],
+      "@/*": [
+        "playground/*"
+      ]
+    }
+  }
+}
