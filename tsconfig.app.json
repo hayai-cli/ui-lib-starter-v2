@@ -1,9 +1,10 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": [
-    "env.d.ts",
-    "playground/**/*",
-    "playround/**/*.vue"
+    "**/*.ts",
+    "**/*.d.ts",
+    "**/*.tsx",
+    "**/*.vue", "bin/index.js", "bin/index.js", "build/index.js", "build/index.js",
   ],
   "exclude": [
     "playground/**/__tests__/*"
